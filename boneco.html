@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    #forca {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .boneco {
+      position: relative;
+    }
+
+    .cabeca {
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .corpo {
+      width: 30px;
+      height: 60px;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .braco-direito,
+    .braco-esquerdo {
+      width: 10px;
+      height: 40px;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+    }
+
+    .braco-direito {
+      left: 20px;
+      transform: translateX(10%) rotate(135deg);
+    }
+
+    .braco-esquerdo {
+      left: -31px;
+      transform: translateX(10%) rotate(45deg);
+    }
+
+    .perna-direita,
+    .perna-esquerda {
+      width: 10px;
+      height: 40px;
+      background-color: #333;
+      position: absolute;
+      top: 110px;
+    }
+
+    .perna-direita {
+      left: 3px;
+      transform: translateX(10%);
+    }
+
+    .perna-esquerda {
+      left: -12px;
+      transform: translateX(-20%);
+    }
+  </style>
+</head>
+<body>
+
+<div id="forca">
+  <div class="boneco">
+    <div class="cabeca"></div>
+    <div class="corpo"></div>
+    <div class="braco-direito"></div>
+    <div class="braco-esquerdo"></div>
+    <div class="perna-direita"></div>
+    <div class="perna-esquerda"></div>
+  </div>
+</div>
+
+</body>
+</html>
