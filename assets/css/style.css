@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+
+  #forca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boneco {
+    position: relative;
+  }
+
+  .cabeca {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .corpo {
+    width: 50px;
+    height: 80px;
+    background-color: transparent;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+  }
+
+  .braco-direito,
+  .braco-esquerdo {
+    width: 20px;
+    height:75px;
+    background-color: transparent;
+    position: absolute;
+    top: -85px;
+    border-radius: 10px;
+  }
+
+  .braco-direito {
+    left: 29px;
+    transform: translateX(10%) rotate(135deg);
+  }
+
+  .braco-esquerdo {
+    left: -55px;
+    transform: translateX(10%) rotate(45deg);
+  }
+
+  .perna-direita,
+  .perna-esquerda {
+    width: 20px;
+    height: 65px;
+    background-color: transparent;
+    position: absolute;
+    top: -7px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .perna-direita {
+    left: 3px;
+    transform: translateX(10%);
+  }
+
+  .perna-esquerda {
+    left: -21px;
+    transform: translateX(-20%);
+  }
+
+  #palavraSecreta{
+   font-size: 60px;
+   position:absolute;
+   top: 300px; 
+   
+  }
+
+  .botoes{
+    display: inline-flex;
+    position: relative;
+    top:150px;
+  }
+  .letras{
+    padding: 20px;
+    border: solid black;
+    margin-right: 5px;
+  }
+  .letras:hover{
+    background-color:darkgray;
+  }
+
