@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const cabeca = document.querySelector(".cabeca");
-    const corpo = document.querySelector(".corpo")
-    const bracoDireito = document.querySelector(".braco-direito")
-    const bracoEsquerdo = document.querySelector(".braco-esquerdo")
-    const pernaDireita = document.querySelector(".perna-direita")
-    const pernaEsquerda = document.querySelector(".perna-esquerda")
-    const forca = document.querySelector('#forca');
+    const corpo = document.querySelector(".corpo");
+    const bracoDireito = document.querySelector(".braco-direito");
+    const bracoEsquerdo = document.querySelector(".braco-esquerdo");
+    const pernaDireita = document.querySelector(".perna-direita");
+    const pernaEsquerda = document.querySelector(".perna-esquerda");
 
     const palavras = ["Empreendedorismo", "oportunidade", "negócios", "inovadocao", "desafios", "criatividade", "resiliencia", "visao", "estrategia", "liderança", "adaptacao", "constancia", "crescimento", "sustentavel", "persistencia", "sucesso", "inspiracao", "planejamento", "perseveranca", "coragem", "inovacao", "mercado", "competitividade", "liderar", "empreender", "transformacao", "confianca", "proatividade", "excelencia"]
 
@@ -18,20 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < letra.length; i++) {
         palavraSecreta.innerHTML += '-'
     };
-    const estiloCabeca = getComputedStyle(cabeca);
-    const estiloCorpo = getComputedStyle(corpo);
-    const estiloBracoDireito = getComputedStyle(bracoDireito);
-    const estiloBracoEsquerdo = getComputedStyle(bracoEsquerdo);
-    const estiloPernaEsquerda = getComputedStyle(pernaDireita);
-    const estiloPernaDireita = getComputedStyle(pernaEsquerda);
- let erros = 0;
+
+    let erros = 0;
     letraTeclado.forEach(function (letraClicada) {
         letraClicada.addEventListener('click', function () {
             let clicada = letraClicada.innerText;
             let clicadaMinuscula = clicada.toLowerCase()
             var novaPalavra = "";
-           
             let acertou = false;
+            
             for (let i = 0; i < letra.length; i++) {
                 if (palavraSecreta.innerText[i] !== "-") {
                     novaPalavra += palavraSecreta.innerText[i];
@@ -45,27 +39,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
             palavraSecreta.innerText = novaPalavra;
-            if (!acertou){
+            if (!acertou) {
                 erros++;
                 if (erros === 1) {
-                    cabeca.style.backgroundColor = 'black'
+                    cabeca.style.backgroundColor = 'white'
                 }
                 else if (erros === 2) {
-                    corpo.style.backgroundColor = 'black'
+                    corpo.style.backgroundColor = 'white'
                 }
                 else if (erros === 3) {
-                    bracoEsquerdo.style.backgroundColor = 'black';
+                    bracoEsquerdo.style.backgroundColor = 'white';
                 }
                 else if (erros === 4) {
-                    bracoDireito.style.backgroundColor = 'black'
+                    bracoDireito.style.backgroundColor = 'white'
                 }
                 else if (erros === 5) {
-                    pernaDireita.style.backgroundColor = 'black'
+                    pernaDireita.style.backgroundColor = 'white'
                 }
 
                 else if (erros === 6) {
-                    pernaEsquerda.style.backgroundColor = 'black'
-                    
+                    pernaEsquerda.style.backgroundColor = 'white';
+                }
+                else if (erros === 7) {
+                    window.location.href = 'assets/html/derrota.html';
                 }
             }
         });

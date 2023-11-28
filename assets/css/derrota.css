@@ -1,0 +1,22 @@
+h1{
+    font-size: xxx-large;
+    position: absolute;
+    left: 30%;
+  }
+  button{
+    padding: 50px 90px;
+    font-size: xx-large;
+    background-color: darkorange;
+    border-radius: 70px;
+    position:absolute;
+    left:35%;
+    top:20%;
+  }
+  button:hover{
+    background-color: rgb(211, 116, 0);
+    cursor: pointer;
+  }
+  img{
+    width: 400px;
+    height: 400px;;
+  }
