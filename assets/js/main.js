@@ -63,7 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 else if (erros === 7) {
                     window.location.href = 'assets/html/derrota.html';
                 }
+                const letrasUsadas = document.querySelector(".letrasUsadas");
+                letrasUsadas.innerText += "   "+clicada;
             }
+            
         });
 
     })

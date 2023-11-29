@@ -15,7 +15,7 @@ body {
 
   .boneco {
     position: absolute;
-    left:512px;
+    left:410px;
     top:515px;
   }
 
@@ -84,11 +84,12 @@ body {
   #palavraSecreta{
    font-size: 60px;
    position:absolute;
-   top: 300px; 
+   top: 250px; 
    letter-spacing: 20px;
    color: #f4f4f4;
    padding: 10px;
-   background-color: hsla(0, 0%, 0%, 0.662);
+   background-color: hsla(0, 0%, 0%, 0.771);
+   border-radius: 50px;
   }
 
   .botoes{
@@ -124,4 +125,17 @@ body {
   body{
     background-image: url(../img/praça.jpg);
     background-size: 100% 100%;
+  }
+  .letrasJaUsadas{
+    background-color: hsla(0, 0%, 0%, 0.807);
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top:-200px;
+    border-radius: 30px;
+  }
+  .letrasUsadas{
+    color: aliceblue;
+    font-size: xx-large;
+
   }
