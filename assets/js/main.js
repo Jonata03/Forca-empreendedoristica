@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Caso contrário, mantenha o "-"
                     novaPalavra += "-";
                 }
+                if (novaPalavra === palavras[numero]){
+                    window.location.href = 'assets/html/vitoria.html'
+                }
             }
             palavraSecreta.innerText = novaPalavra;
             if (!acertou) {
